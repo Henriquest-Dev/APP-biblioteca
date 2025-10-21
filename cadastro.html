@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="login.html">
+  <link rel="stylesheet" href="biblioteca.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Cadastro</title>
+
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #2b5876, #4e4376);
+      color: #fff;
+    }
+
+    /* Caixa principal */
+    .container {
+      width: 100%;
+      max-width: 400px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .register-box h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+
+    /* Formulário */
+    .form-group {
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+    }
+
+    .input-span {
+      position: absolute;
+      left: 10px;
+      top: 38px;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.7rem 0.7rem 0.7rem 2rem;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    .form-group input::placeholder {
+      color: #ddd;
+    }
+
+    /* Botão */
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 1rem;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+    }
+
+    /* Texto inferior */
+    .info-text {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .info-text a {
+      color: #00c6ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .info-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="register-box">
+      <h2>Cadastrar-se</h2>
+
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <span class="input-span">👤</span>
+          <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <span class="input-span">@</span>
+          <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Palavra-passe</label>
+          <span class="input-span">🔒</span>
+          <input type="password" id="password" name="password" placeholder="Crie a sua senha" required>
+        </div>
+
+        <button type="submit"><a href="biblioteca.html" style="list-style-type: none;">Cadastrar-se</a></button>
+      </form>
+
+      <p class="info-text">
+        Já tem uma conta? <a href="login.html">Entre aqui</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
